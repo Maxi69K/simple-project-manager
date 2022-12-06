@@ -1,0 +1,85 @@
+/*   random images:      https://source.unsplash.com/random    */
+/* @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); */
+
+/* font-family: 'Anton', sans-serif; */
+/**********************************************
+                Global styles
+**********************************************/
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url(https://source.unsplash.com/I0oPzzc6KT8) center/cover no-repeat;
+  background-color: #111;
+}
+
+/**********************************************
+                Specific styles
+**********************************************/
+h1 {
+  text-align: center;
+  color: aqua;
+}
+
+form {
+  position: relative;
+  top: 10vh;
+  max-width: 450px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, .7);
+  padding: 2rem;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, .5);
+  border-radius: 25px;
+}
+
+input {
+  color: aqua;
+  text-shadow: 2px 2px 1px #333;
+}
+
+li {
+  color: aqua;
+  width: 100%;
+  background-color: rgba(218, 212, 212, .1);
+  text-shadow: 2px 2px 1px #333;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  border: 1px solid aqua;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px 2px rgba(11, 60, 66, .6);
+  transition: .3s linear;
+}
+
+li:hover {
+  background-color: rgba(218, 212, 212, .4);
+  transition: .3s linear;
+}
+
+.task-list li.completed {
+  color: greenyellow;
+}
+
+.delete-task {
+  cursor: pointer;
+}
+
+/**************************************
+            @media Queries
+**************************************/
+
+@media all and (min-width: 576px) {
+  li {
+    font-size: 1.5rem;
+  }
+}
